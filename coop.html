@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalina Monova |</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-pink-100 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between">
+            <a href="index.html" class="text-white text-lg font-bold">Kalina Monova</a>
+            <div>
+                <a href="index.html" class="text-gray-300 hover:text-white mx-2">Home</a>
+                <a href="projects.html" class="text-gray-300 hover:text-white mx-2">Projects</a>
+                <a href="about.html" class="text-gray-300 hover:text-white mx-2">About</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white mx-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container mx-auto mt-16 p-2 flex-grow">
+        <h1 class="text-4xl font-bold mb-4">Co-op Application Website</h1>
+        <p class="text-lg mb-4">This project is a data-driven co-op application website that supports five different types of
+            users: Students, Companyb workers, Advisors, Alumni, and System Administrators. You can "sign in" to each persona by
+        click on "Act as ___". Each persona has 3 pages, which each support essential needs for that persona. A rest API was used to 
+    link together the backend SQL database (through SQL queries) and the front-end streamlit UI. We created our own Relational database
+in SQL. </p>
+            <a href="https://github.com/lilybedi/Career-Compass" target="_blank" class="text-blue-500 hover:underline">Link to github repo</a>
+        <h2 class="text-2xl font-semibold mt-8 mb-2">Features</h2>
+        <ul class="list-disc ml-8 mb-4">
+            <li>A student currently taking classes at Northeastern
+                 can apply to co-ops and use special filters, connect with alumni and their advisor.  
+            </li>
+            <li>An advisor can interact with their students by viewing their applications.
+                 Should also be able to filter students that have and have not recieved co-ops and view their profiles.</li>
+            <li>An alumni who has graduated from Northeastern having done a co-op should be able to connect 
+                with students to give them advice. They should also be able to display thier previous co-op experiences.</li>
+            <li>A system administrator can view tickets of errors that need fixing, 
+                resolve or delete these errors and they should have full control over all users including, deleting accounts. </li>
+        </ul>
+    
+        <h2 class="text-2xl font-semibold mt-8 mb-2">Technologies Used</h2>
+        <p class="mb-4">Python, Streamlit for UI, SQL, Docker, VS Code, GitHub</p>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.02.16 AM.png" alt="Home Page" class="rounded shadow-md">
+                <p class="mt-2 text-center">Home Page</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.03.40 AM.png" alt="Student Home Page" class="rounded shadow-md">
+                <p class="mt-2 text-center">Student Home Page</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.04.05 AM.png"alt="Adding a skill to student profile" class="rounded shadow-md">
+                <p class="mt-2 text-center">Adding a skill to student profile</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.04.30 AM.png" alt="Company home page" class="rounded shadow-md">
+                <p class="mt-2 text-center">Company home page</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.05.52 AM.png" alt="Company view job applications page" class="rounded shadow-md">
+                <p class="mt-2 text-center">Company view job applications page</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.06.02 AM.png" alt="Company view individual application" class="rounded shadow-md">
+                <p class="mt-2 text-center">Company view individual application</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.09.13 AM.png" alt="Company view all job postings" class="rounded shadow-md">
+                <p class="mt-2 text-center">Company view all job postings</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.09.27 AM.png" alt="Company edit job postings" class="rounded shadow-md">
+                <p class="mt-2 text-center">Company edit job postings</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.09.47 AM.png" alt="Company Editing Job" class="rounded shadow-md">
+                <p class="mt-2 text-center">Company editing job</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.13.18 AM.png" alt="Advisor home page" class="rounded shadow-md">
+                <p class="mt-2 text-center">Advisor home page</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.44.08 AM.png" alt="Alumni add previous experience" class="rounded shadow-md">
+                <p class="mt-2 text-center">Alumni add previous experience</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.18.58 AM.png" alt="System Admin see all users (filtered)" class="rounded shadow-md">
+                <p class="mt-2 text-center">System Admin see all users (filtered)</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.18.21 AM.png" alt="System Admin see all users (filtered and deleted)" class="rounded shadow-md">
+                <p class="mt-2 text-center">System Admin see all users (filtered and deleted)</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.38.48 AM.png" alt="System Admin see all ticketsg" class="rounded shadow-md">
+                <p class="mt-2 text-center">System Admin see all tickets</p>
+            </div>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.38.59 AM.png" alt="System Admin see all tickets after resolving" class="rounded shadow-md">
+                <p class="mt-2 text-center">System Admin see all tickets after resolving</p>
+            <div>
+                <img src="img/co-op website/Screenshot 2024-12-19 at 12.28.42 AM.png" alt="Relationa database diagram" class="rounded shadow-md">
+                <p class="mt-2 text-center">Relationa database diagram</p>
+            </div>
+           
+            </div>
+        </div>
+    
+        <a href="projects.html" class="text-blue-500 hover:underline block mt-8">Back to Projects</a>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 mt-16 text-center text-gray-300">
+        <p class="text-lg font-bold mb-4">Contact Me</p>
+        <div class="flex justify-center space-x-8">
+            <p class="text-lg mb-4">Email: <a href="mailto:monova.k@northeastern.edu"
+                    class="text-blue-500 hover:underline">monova.k@northeastern.edu</a></p>
+            <p class="text-lg">LinkedIn: <a href="https://www.linkedin.com/in/kalina-monova/" target="_blank" class="text-blue-500 hover:underline">LinkedIn Profile</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
