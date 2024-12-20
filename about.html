@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalina Monova | About</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-pink-100 text-gray-800 flex flex-col min-h-screen">
 
   <!-- Navigation -->
-  <nav class="bg-gray-800 p-4">
-    <div class="container mx-auto flex justify-between">
-      <a href="index.html" class="text-white text-lg font-bold">Kalina Monova</a>
-      <div>
-        <a href="index.html" class="text-gray-300 hover:text-white mx-2">Home</a>
-        <a href="projects.html" class="text-gray-300 hover:text-white mx-2">Projects</a>
-        <a href="about.html" class="text-gray-300 hover:text-white mx-2">About</a>
-        <a href="contact.html" class="text-gray-300 hover:text-white mx-2">Contact</a>
-      </div>
-    </div>
-  </nav>
+  <div id="header-container"></div>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            });
+    </script>
 
   <!-- About Content -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <section class="container mx-auto mt-16 p-4 text-right flex-grow">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section class="container mx-auto mt-16 p-4 flex-grow md:col-span-1">
       <img src="img/IMG_5706 (1).jpg" alt="my picture" class="rounded shadow-md">
     </section>
-  <section class="container mx-auto mt-16 p-4 text-center flex-grow">
-    <h1 class="text-4xl font-bold mb-4">About Me</h1>
-    <p class="text-lg">Hi, my name is Kalina Monova. I am a second-year studying 
+    <section class="container mx-auto mt-16 p-4 flex-grow md:col-span-2 text-center">
+      <h1 class="text-4xl font-bold mb-4">About Me</h1>
+      <p class="text-lg">Hi, my name is Kalina Monova. I am a second-year studying
         Computer Science and Behavioral Neuroscience at Northeastern University.
-        I am interested in exploring the intersection of these fields specifically 
-        computational biology and bioinformatics, 
-        where I hope to leverage my skills to contribute to research and innovative solutions. 
+        I am interested in exploring the intersection of these fields specifically computational biology and
+        bioinformatics,
+        where I hope to leverage my skills to contribute to research and innovative solutions.
+        I am also interested in software engineering and web development roles. I enjoy
+        front-end and the creative aspects as well as the more techincal, problem solving aspects of
+        back-end. In my free time I like going to the gym, running and reading. </p>
+        <p><a href="https://github.com/KalinaM11" target="_blank" class="text-blue-500 hover:underline">Link
+          to github</a></p>
+        <p><a href="img/Kalina Monova CS Resume.pdf" target="_blank" class="text-blue-500 hover:underline">Resume</a></p>
+    </section>
 
-    I am also interested in software engineering and web development roles. I enjoy  
-    front-end and the creative aspects as well as the more techincal, problem solving aspects of
-    back-end. In my free time I like going to the gym, running and reading. </p>
-  </section>
- 
-</div>
+  </div>
 
- <!-- Footer -->
-<footer class="bg-gray-800 p-2 text-center text-gray-300">
-    <p class="text-sm font-bold mb-4">Contact Me</p>
-    <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8">
-      <p class="text-sm">
-        Email: <a href="mailto:monova.k@northeastern.edu" class="text-blue-500 hover:underline">monova.k@northeastern.edu</a>
-      </p>
-      <p class="text-sm">
-        LinkedIn: <a href="https://www.linkedin.com/in/kalina-monova/" target="_blank" class="text-blue-500 hover:underline">LinkedIn Profile</a>
-      </p>
-    </div>
-  </footer>
+  <!-- Footer -->
+  <div id="footer-container"></div>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
 
 </body>
+
 </html>

@@ -11,17 +11,14 @@
 <body class="bg-pink-100 text-gray-800 flex flex-col min-h-screen">
 
     <!-- Navigation -->
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex justify-between">
-            <a href="index.html" class="text-white text-lg font-bold">Kalina Monova</a>
-            <div>
-                <a href="index.html" class="text-gray-300 hover:text-white mx-2">Home</a>
-                <a href="projects.html" class="text-gray-300 hover:text-white mx-2">Projects</a>
-                <a href="about.html" class="text-gray-300 hover:text-white mx-2">About</a>
-                <a href="contact.html" class="text-gray-300 hover:text-white mx-2">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <div id="header-container"></div>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            });
+    </script>
 
     <section class="container mx-auto mt-16 p-2 flex-grow">
         <h1 class="text-4xl font-bold mb-4">Co-op Application Website</h1>
@@ -49,42 +46,42 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
             <div>
-                <img src="img/starting2.jpeg" alt="Starting screen" class="rounded shadow-md">
+                <img src="/img/starting2.jpeg" alt="Starting screen" class="rounded shadow-md">
                 <p class="mt-2 text-center">Starting screen</p>
             </div>
             <div>
-                <img src="img/beforeEnd.jpeg" alt="After two clicks" class="rounded shadow-md">
+                <img src="/img/beforeEnd.jpeg" alt="After two clicks" class="rounded shadow-md">
                 <p class="mt-2 text-center">After two clicks</p>
             </div>
             <div>
-                <img src="img/LightEmALl.jpeg" alt="Before win" class="rounded shadow-md">
+                <img src="/img/LightEmALl.jpeg" alt="Before win" class="rounded shadow-md">
                 <p class="mt-2 text-center">Before win</p>
             </div>
             <div>
-                <img src="img/WinLightEmALl.jpeg" alt="Winning screen" class="rounded shadow-md">
+                <img src="/img/WinLightEmALl.jpeg" alt="Winning screen" class="rounded shadow-md">
                 <p class="mt-2 text-center">Winning Screen</p>
             </div>
             <div>
-                <img src="img/gameOverLightEm.jpeg" alt="Game Over" class="rounded shadow-md">
+                <img src="/img/gameOverLightEm.jpeg" alt="Game Over" class="rounded shadow-md">
                 <p class="mt-2 text-center">Game Over</p>
             </div>
 
         </div>
         </div>
 
-        <a href="projects.html" class="text-blue-500 hover:underline block mt-8">Back to Projects</a>
+        <a href="/projects.html" class="text-blue-500 hover:underline block mt-8">Back to Projects</a>
     </section>
 
 
     <!-- Footer -->
-    <footer class="bg-gray-800 p-4 mt-16 text-center text-gray-300">
-        <p class="text-lg font-bold mb-4">Contact Me</p>
-        <div class="flex justify-center space-x-8">
-            <p class="text-lg mb-4">Email: <a href="mailto:monova.k@northeastern.edu"
-                    class="text-blue-500 hover:underline">monova.k@northeastern.edu</a></p>
-            <p class="text-lg">LinkedIn: <a href="https://www.linkedin.com/in/kalina-monova/" target="_blank" class="text-blue-500 hover:underline">LinkedIn Profile</a></p>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
 
 </body>
 

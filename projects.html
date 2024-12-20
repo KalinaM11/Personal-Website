@@ -9,17 +9,14 @@
 <body class="bg-pink-100 text-gray-800 flex flex-col min-h-screen">
 
   <!-- Navigation -->
-  <nav class="bg-gray-800 p-4">
-    <div class="container mx-auto flex justify-between">
-      <a href="index.html" class="text-white text-lg font-bold">Kalina Monova</a>
-      <div>
-        <a href="index.html" class="text-gray-300 hover:text-white mx-2">Home</a>
-        <a href="projects.html" class="text-gray-300 hover:text-white mx-2">Projects</a>
-        <a href="about.html" class="text-gray-300 hover:text-white mx-2">About</a>
-        <a href="contact.html" class="text-gray-300 hover:text-white mx-2">Contact</a>
-      </div>
-    </div>
-  </nav>
+  <div id="header-container"></div>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+            });
+    </script>
 
   <!-- Main Content -->
   <main class="flex-grow container mx-auto mt-16 p-4">
@@ -31,32 +28,32 @@
         <div class="bg-white p-6 rounded shadow">
             <h2 class="text-2xl font-semibold mb-2">Co-op Application Website</h2>
             <p class="mb-4">A data-driven co-op application website. </p>
-            <a href="coop.html" class="text-blue-500 hover:underline">Read More</a>
-            <img src="img/co-op website/Screenshot 2024-12-19 at 12.02.16 AM.png" alt="Home Page" class="rounded shadow-md">
+            <a href="projects/coop.html" class="text-blue-500 hover:underline">Read More</a>
+            <img src="/img/co-op website/Screenshot 2024-12-19 at 12.02.16 AM.png" alt="Home Page" class="rounded shadow-md">
                 <p class="mt-2 text-center">Home Page</p>
           </div>
 
       <div class="bg-white p-6 rounded shadow">
         <h2 class="text-2xl font-semibold mb-2">Stocks Application</h2>
         <p class="mb-4">A stock simulator platform that allows you to mimic buying/selling stocks. </p>
-        <a href="stocks.html" class="text-blue-500 hover:underline">Read More</a>
-        <img src="img/buy portfolio.png" alt="Home page" class="rounded shadow-md">
+        <a href="projects/stocks.html" class="text-blue-500 hover:underline">Read More</a>
+        <img src="/img/buy portfolio.png" alt="Home page" class="rounded shadow-md">
                 <p class="mt-2 text-center">Home page</p>
       </div>
 
       <div class="bg-white p-6 rounded shadow">
         <h2 class="text-2xl font-semibold mb-2">MineSweeper Project</h2>
         <p class="mb-4">Built MineSweeper game in Java.</p>
-        <a href="minesweeper.html" class="text-blue-500 hover:underline">Read More</a>
-        <img src="img/2clicks.jpeg" alt="Beginning of game with first few clicks" class="rounded shadow-md">
+        <a href="projects/minesweeper.html" class="text-blue-500 hover:underline">Read More</a>
+        <img src="/img/2clicks.jpeg" alt="Beginning of game with first few clicks" class="rounded shadow-md">
                 <p class="mt-2 text-center">Beginning of game with first few clicks</p>
       </div>
 
       <div class="bg-white p-6 rounded shadow">
         <h2 class="text-2xl font-semibold mb-2">Light Em All</h2>
         <p class="mb-4">A game consisting of a grid of pipes that need to be connected.</p>
-        <a href="lightEmAll.html" class="text-blue-500 hover:underline">Read More</a>
-        <img src="img/starting2.jpeg" alt="Starting screen" class="rounded shadow-md">
+        <a href="projects/lightEmAll.html" class="text-blue-500 hover:underline">Read More</a>
+        <img src="/img/starting2.jpeg" alt="Starting screen" class="rounded shadow-md">
         <p class="mt-2 text-center">Starting screen</p>
       </div>
 
@@ -64,17 +61,14 @@
   </main>
 
   <!-- Footer -->
-<footer class="bg-gray-800 p-2 text-center text-gray-300">
-    <p class="text-sm font-bold mb-4">Contact Me</p>
-    <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8">
-      <p class="text-sm">
-        Email: <a href="mailto:monova.k@northeastern.edu" class="text-blue-500 hover:underline">monova.k@northeastern.edu</a>
-      </p>
-      <p class="text-sm">
-        LinkedIn: <a href="https://www.linkedin.com/in/kalina-monova/" target="_blank" class="text-blue-500 hover:underline">LinkedIn Profile</a>
-      </p>
-    </div>
-  </footer>
+  <div id="footer-container"></div>
+  <script>
+      fetch('/footer.html')
+          .then(response => response.text())
+          .then(html => {
+              document.getElementById('footer-container').innerHTML = html;
+          });
+  </script>
 
 </body>
 </html>
